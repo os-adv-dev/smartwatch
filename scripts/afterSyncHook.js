@@ -55,9 +55,6 @@ if (platform !== "web") {
         throw new Error("File capacitor.build.gradle not found.");
     }
 
-
-
-
     }
     else {
         throw new Error("File capacitor.config.json not found.");
