@@ -44,8 +44,7 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "capacitor:sync:after": "node scripts/afterSyncHook.js",
-    "postinstall": "node scripts/afterSyncHook.js"
+    "capacitor:sync:after": "node scripts/afterSyncHook.js"
   },
   "devDependencies": {
     "@capacitor/android": "^6.0.0",
