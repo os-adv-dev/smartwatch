@@ -48,12 +48,12 @@
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
     "postinstall": "node scripts/postInstall.js",
-    "capacitor:copy:before": ">>>> ✅ >>>> cho copy before $CAPACITOR_PLATFORM_NAME",
+    "capacitor:copy:before": ">>> ✅ echo copy before $CAPACITOR_PLATFORM_NAME",
     "capacitor:copy:after": ">>>> ✅ >>>> echo copy after $CAPACITOR_PLATFORM_NAME",
     "capacitor:update:before": ">>>> ✅ >>>> echo update before $CAPACITOR_PLATFORM_NAME",
     "capacitor:update:after": "node scripts/afterSyncHook.js",
     "capacitor:sync:after": "node scripts/afterSyncHook.js",
-    "capacitor:sync:before": " >>>> ✅ >>>> echo sync before $CAPACITOR_PLATFORM_NAME"
+    "capacitor:sync:before": " >>>> ✅ >>>> echo sync before $CAPACITOR_PLATFORM_NAME  ✅"
   },
   "devDependencies": {
     "@capacitor/android": "^6.0.0",
