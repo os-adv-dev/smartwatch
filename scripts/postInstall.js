@@ -5,7 +5,6 @@ const path = require('path');
 const wearMainPath = path.join(__dirname, 'node_modules/smartwatch/wear/src/main');
 console.log('>>>> 📂 Display full directory :: ' + wearMainPath);
 
-
 // Verifica se a pasta existe
 if (!fs.existsSync(wearMainPath)) {
     console.log('>>>> 📂 Creating directory : wear/src/main');

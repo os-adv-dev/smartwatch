@@ -1,5 +1,4 @@
 #!/usr/bin/env ts-node
-"use strict";
 var fs = require("fs");
 var path = require("path");
 
