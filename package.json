@@ -9,6 +9,8 @@
   "files": [
     "smartwatch/src/main/",
     "smartwatch/build.gradle",
+    "wear/",
+    "wear/src/main/",
     "dist/",
     "ios/Sources",
     "ios/Tests",
@@ -44,6 +46,8 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
+    "postinstall": "node scripts/postInstall.js",
     "capacitor:sync:after": "node scripts/afterSyncHook.js"
   },
   "devDependencies": {
