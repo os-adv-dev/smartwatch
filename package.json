@@ -46,12 +46,12 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
-    "capacitor:copy:before": ">>> ✅ echo copy before $CAPACITOR_PLATFORM_NAME",
+    "capacitor:copy:before": "node scripts/setKotlinGradlePlugin.js",
     "capacitor:copy:after": "node scripts/setKotlinGradlePlugin.js",
-    "capacitor:update:before": ">>>> ✅ >>>> echo update before $CAPACITOR_PLATFORM_NAME",
+    "capacitor:update:before": "node scripts/setKotlinGradlePlugin.js",
     "capacitor:update:after": "node scripts/setKotlinGradlePlugin.js",
-    "capacitor:sync:after": "node scripts/afterSyncHook.js",
-    "capacitor:sync:before": " >>>> ✅ echo sync before $CAPACITOR_PLATFORM_NAME  ✅"
+    "capacitor:sync:after": "node scripts/setKotlinGradlePlugin.js",
+    "capacitor:sync:before": "node scripts/setKotlinGradlePlugin.js"
   },
   "devDependencies": {
     "@capacitor/android": "^6.0.0",
